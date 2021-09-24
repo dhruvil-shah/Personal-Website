@@ -5,7 +5,7 @@ import Zoom from 'react-reveal/Zoom';
 export const Home = () => {
     return (
         <div className='home'>
-            <FaRegHandSpock className='hand-icon' size='2em' />
+            <FaRegHandSpock className='hand-icon' size='1.2em'/>
             <Zoom left>
             <h1>Hey Dhruvil Here!!</h1>
             </Zoom>
