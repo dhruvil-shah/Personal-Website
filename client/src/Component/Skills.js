@@ -1,25 +1,85 @@
-import React from 'react'
-
+import React from 'react';
+import { Skill_Item } from './Skill_Item';
+const language=[
+    {"title":"Java","rating":5},
+    {"title":"C","rating":4},
+    {"title":"Python","rating":4},
+    {"title":"HTML-CSS","rating":4},
+    {"title":"JavaScript","rating":4}
+    
+]
+const framework=[
+    {"title":"Node.js","rating":4},
+    {"title":"Express.js","rating":4},
+    {"title":"React.js","rating":4},
+    {"title":"PHP","rating":3}
+]
+const database=[
+    {"title":"MongoDB","rating":4},
+    {"title":"SQL","rating":3}
+]
+const other=[
+    {"title":"Problem Solving","rating":4},
+    {"title":"DSA","rating":4},
+    {"title":"Git","rating":3},
+    {"title":"Machine Learning","rating":3},
+    {"title":"Competitive Programming","rating":3}
+]
 export const Skills = () => {
     return (
-        <div>
-            Skills
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-
-Where does it come from?
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. </p>
-        
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-Why do we use it?
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
-
-Where does it come from?
-Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</div>
+        <div className='skills'>
+        <fieldset>
+        <legend >Languages</legend>
+            <div className='language' >
+            {
+                language.map((lan)=>{
+                    return(
+                        <Skill_Item title={lan.title} rating={lan.rating}/>
+                    )
+                })
+            }
+                {/* <Skill_Item title="Java" rating={3}/> */}
+            </div>
+        </fieldset>
+        <fieldset>
+        <legend >Framework</legend>
+            <div className='language' >
+            {
+                framework.map((fam)=>{
+                    return(
+                        <Skill_Item title={fam.title} rating={fam.rating}/>
+                    )
+                })
+            }
+               
+            </div>
+        </fieldset>
+        <fieldset>
+        <legend >Database</legend>
+            <div className='language' >
+            {
+                database.map((db)=>{
+                    return(
+                        <Skill_Item title={db.title} rating={db.rating}/>
+                    )
+                })
+            }
+               
+            </div>
+        </fieldset>
+        <fieldset>
+        <legend >Others</legend>
+            <div className='language' >
+            {
+                other.map((ot)=>{
+                    return(
+                        <Skill_Item title={ot.title} rating={ot.rating}/>
+                    )
+                })
+            }
+               
+            </div>
+        </fieldset>
+        </div>
     )
 }
