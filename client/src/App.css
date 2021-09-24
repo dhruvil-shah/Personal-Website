@@ -1,0 +1,106 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(185,210,238,0.8216328767835259) 100%);
+}
+.container{
+    background-color: black;
+    width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem auto;
+    height: 100vh;
+    border-radius: 1.2rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    background: rgb(240,161,195);
+background: linear-gradient(90deg, rgba(240,161,195,1) 4%, rgba(127, 170, 223, 0.822) 100%);
+
+} 
+
+.nav{
+    display: flex;
+    background-color: transparent;
+    width: 55rem;
+    margin-top: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+    color: white;
+  
+}
+.nav li{
+    padding: .9rem;
+    list-style: none;
+}
+.nav-item{
+    text-decoration: none;
+}
+.content{
+    display: flex;
+    /* background-color: red; */
+    background-color: transparent;
+    width: 65vw;
+    padding: 1.2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    height: 75vh;
+    overflow-x: auto;
+    overflow-y: auto;
+    overflow: auto;
+    border-radius: 0.2rem;
+    justify-content: center;
+}
+::-webkit-scrollbar {
+    width:0.2rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(212, 178, 178); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(216, 198, 198); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+  .hand-icon{
+    
+    color: rgb(231, 225, 225);
+    animation-name: wave-animation;
+  animation-duration: 6.5s;     
+  animation-iteration-count: infinite; 
+  transform-origin: 70% 70%;       
+  display: inline-block;
+  
+  }
+
+  @keyframes wave-animation {
+    
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) } 
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
+}
+.home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+ .home img{
+   width: 15vw;
+   border-radius: 52px;
+   box-shadow: rgba(202, 107, 107, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ }
