@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter as Router ,Route,Link,Switch} from 'react-router-dom';
+import {BrowserRouter as Router ,Route,Link,Switch,Redirect} from 'react-router-dom';
 import {Home} from './Home.js';
 import {Skills} from './Skills.js';
 import {Contact} from './Contact.js';
@@ -23,11 +23,14 @@ export const Navbar = () => {
             </Bounce>
                 <div className='content'>
                 <Switch>
-                    <Route path="/home" ><Home/></Route>
-                    <Route path="/personal" ><Personal/></Route>
-                    <Route path="/project" ><Project/></Route>
-                    <Route path="/contact" ><Contact/></Route>
-                    <Route path="/skills" ><Skills/></Route>
+                    <Route exact path='/'>
+                    <Redirect to='/home'/>
+                    </Route>
+                    <Route exact path="/home" ><Home/></Route>
+                    <Route exact path="/personal" ><Personal/></Route>
+                    <Route exact path="/project" ><Project/></Route>
+                    <Route exact path="/contact" ><Contact/></Route>
+                    <Route exact path="/skills" ><Skills/></Route>
                 </Switch>
                 </div>
                 </Router>

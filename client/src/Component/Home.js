@@ -9,12 +9,12 @@ export const Home = () => {
             <Zoom left>
             <h1>Hey Dhruvil Here!!</h1>
             </Zoom>
-            <img src='https://cdn5.f-cdn.com/contestentries/1386480/29840496/5b68d04c16995_thumb900.jpg'/>
+            <img src='https://media-exp1.licdn.com/dms/image/C4E03AQEEcvbtDvdO0w/profile-displayphoto-shrink_800_800/0/1607868193277?e=1637798400&v=beta&t=gLUgOUaTOyKSCniMpexMLIjeI0QUao7eNec-fifXq_8'/>
             <Slide left>
-            <p>Cum, mauris risus scelerisque nullam habitasse blandit parturient semper sapien inceptos. Condimentum magna, per justo sit. 
-            Suscipit eget curae; scelerisque odio fringilla maecenas varius vivamus ridiculus eleifend. Curabitur senectus, aenean eu. 
-            Fermentum enim, ad parturient! 
-            Ornare aliquam massa nec sed hac aenean habitasse dolor, potenti eget ullamcorper. Magna habitant senectus mus massa egestas at tempus justo.
+            <p>I'm currently studying as a 3rd year Computer Science student at Nirma University, Ahmedabad. I have been in recent times learned ample number of skills such as 
+Web Development, Machine Learning, Databases, Full Stack Development, Application Development and much more. I have also interest in problem solving on various 
+platforms like Leetcode, Hackerrank, Codeforces, GFG. Apart from side works I was able to score 9.25/10 cpi till my second year. More insights about me can be obtained from these websites.
+
             </p>
             </Slide>
         </div>
