@@ -4,6 +4,11 @@ body{
   background: rgb(238,174,202);
 background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(185,210,238,0.8216328767835259) 100%);
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .container{
     background-color: black;
     width: 65rem;
@@ -121,11 +126,13 @@ background: linear-gradient(90deg, rgba(240,161,195,1) 4%, rgba(127, 170, 223, 0
 
  }
  .form button{
-   background: transparent;
+   background: rgba(243, 177, 134, 0.623);
    width: 5.2rem;
    height: 2.2rem;
    margin: 2rem auto;
+   border-radius: 1.2rem;
    border: none;
+   box-shadow: rgba(0, 0, 0, 0.315) 0px 22px 20px 4px;
    color: rgb(97, 90, 90);
  }
  .form button:hover{
